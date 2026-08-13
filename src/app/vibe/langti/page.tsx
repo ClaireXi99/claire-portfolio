@@ -51,6 +51,7 @@ export default function LangtiPage() {
             alt="浪TI 产品设计图"
             width={1200}
             height={800}
+            priority
             className="w-full h-auto"
           />
         </div>

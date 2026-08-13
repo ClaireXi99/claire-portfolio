@@ -125,6 +125,7 @@ export default function NovelWriterPage() {
             alt="AI 小说创作系统"
             width={1536}
             height={1024}
+            priority
             className="w-full h-auto"
           />
         </div>
