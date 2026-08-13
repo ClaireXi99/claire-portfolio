@@ -6,14 +6,14 @@ const projects = [
   {
     title: "MBTI 旅行目的地推荐",
     description: "水墨风旅行人格测试 H5，五轮塔罗抽牌算出你的命定目的地。",
-    cover: "/vibe/langti/cover.webp",
+    cover: "/claire-portfolio/vibe/langti/cover.webp",
     slug: "/vibe/langti",
     tags: ["Next.js", "Framer Motion", "H5"],
   },
   {
     title: "AI 小说创作系统",
     description: "面向长篇创作的 Skill，配合 Agent 实现百万字不崩人设。",
-    cover: "/vibe/novel-writer/cover.webp",
+    cover: "/claire-portfolio/vibe/novel-writer/cover.webp",
     slug: "/vibe/novel-writer",
     tags: ["Claude Code", "Skill", "Agent"],
   },

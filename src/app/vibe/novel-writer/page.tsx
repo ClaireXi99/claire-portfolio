@@ -121,7 +121,7 @@ export default function NovelWriterPage() {
         {/* Cover */}
         <div className="mt-8 rounded-2xl overflow-hidden border border-gray-100">
           <Image
-            src="/vibe/novel-writer/cover.webp"
+            src="/claire-portfolio/vibe/novel-writer/cover.webp"
             alt="AI 小说创作系统"
             width={1536}
             height={1024}
@@ -312,7 +312,7 @@ export default function NovelWriterPage() {
             {Array.from({ length: mangaPages[activeManga] }, (_, i) => i + 1).map((page) => (
               <div key={page} className="rounded-xl overflow-hidden border border-gray-100">
                 <Image
-                  src={`/vibe/novel-writer/manga/ch${String(activeManga).padStart(2, "0")}/page_${String(page).padStart(2, "0")}.webp`}
+                  src={`/claire-portfolio/vibe/novel-writer/manga/ch${String(activeManga).padStart(2, "0")}/page_${String(page).padStart(2, "0")}.webp`}
                   alt={`第${activeManga}章 第${page}页`}
                   width={300}
                   height={400}
@@ -331,7 +331,7 @@ export default function NovelWriterPage() {
               <div key={c.name} className="text-center">
                 <div className="rounded-xl overflow-hidden border border-gray-100">
                   <Image
-                    src={`/vibe/novel-writer/characters/${c.file}`}
+                    src={`/claire-portfolio/vibe/novel-writer/characters/${c.file}`}
                     alt={c.name}
                     width={300}
                     height={400}

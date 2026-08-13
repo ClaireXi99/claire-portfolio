@@ -47,7 +47,7 @@ export default function LangtiPage() {
         {/* Cover Image */}
         <div className="mt-12 rounded-2xl overflow-hidden border border-gray-100">
           <Image
-            src="/vibe/langti/cover.webp"
+            src="/claire-portfolio/vibe/langti/cover.webp"
             alt="浪TI 产品设计图"
             width={1200}
             height={800}
