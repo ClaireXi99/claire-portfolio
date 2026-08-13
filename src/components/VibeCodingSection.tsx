@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -34,7 +35,7 @@ export function VibeCodingSection() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <a
+            <Link
               key={project.slug}
               href={project.slug}
               className="group block rounded-2xl border border-gray-100 overflow-hidden hover:border-primary-200 hover:shadow-lg hover:shadow-primary-500/5 transition-all duration-300"
@@ -67,7 +68,7 @@ export function VibeCodingSection() {
                   ))}
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

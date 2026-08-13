@@ -267,7 +267,7 @@ export default function NovelWriterPage() {
                   {expanded && readable && (
                     <div className="px-4 pb-4 pt-1 border-t border-gray-50">
                       <a
-                        href={`/vibe/novel-writer/chapters/第${String(num).padStart(4, "0")}章-${title}.md`}
+                        href={`/claire-portfolio/vibe/novel-writer/chapters/第${String(num).padStart(4, "0")}章-${title}.md`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block text-xs text-primary-500 hover:text-primary-600"
