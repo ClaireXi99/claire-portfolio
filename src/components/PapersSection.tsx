@@ -5,7 +5,7 @@ const papers = [
     authors: "Wang, Y., Liang, H., & Zhai, B.",
     title: "Temporal Neighborhood based Self-supervised Pre-training Model for Sleep Stages Classification",
     venue: "ICBBT 2023",
-    note: "第一作者",
+    note: "",
     link: "https://dl.acm.org/doi/abs/10.1145/3608164.3608185",
   },
   {
