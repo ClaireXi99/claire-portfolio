@@ -6,7 +6,7 @@ export function Footer() {
           &copy; 2026 王映熹. Built with passion & AI.
         </p>
         <p className="font-mono text-xs text-gray-300">
-          Next.js &middot; Tailwind CSS &middot; Cloudflare Pages
+          Next.js &middot; Tailwind CSS &middot; GitHub Pages
         </p>
       </div>
     </footer>
