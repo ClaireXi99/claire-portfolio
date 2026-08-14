@@ -17,6 +17,13 @@ const projects = [
     slug: "/vibe/novel-writer",
     tags: ["Claude Code", "Skill", "Agent"],
   },
+  {
+    title: "Code City",
+    description: "把 GitHub 仓库可视化为 3D 城市，文件变建筑，高度是大小，颜色是语言。",
+    cover: "/claire-portfolio/vibe/code-city/cover.webp",
+    slug: "/vibe/code-city",
+    tags: ["Three.js", "GitHub API", "Treemap"],
+  },
 ];
 
 export function VibeCodingSection() {
