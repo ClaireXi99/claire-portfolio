@@ -7,6 +7,7 @@ const navItems = [
   { label: "vibe coding", href: "#vibe-coding" },
   { label: "work", href: "#projects" },
   { label: "papers", href: "#papers" },
+  { label: "open source", href: "#open-source" },
 ];
 
 export function Navigation() {
