@@ -24,6 +24,13 @@ const projects = [
     slug: "/vibe/code-city",
     tags: ["Three.js", "GitHub API", "Treemap"],
   },
+  {
+    title: "AgentLens",
+    description: "AI Agent 执行轨迹回放可视化器，支持 Claude Code / Codex / LangChain 等 5 大框架。",
+    cover: "/claire-portfolio/vibe/agent-lens/cover.webp",
+    slug: "/vibe/agent-lens",
+    tags: ["Zero Deps", "Single HTML", "Canvas", "Trace Replay"],
+  },
 ];
 
 export function VibeCodingSection() {
