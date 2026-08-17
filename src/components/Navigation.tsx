@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 const navItems = [
   { label: "home", href: "#home" },
   { label: "vibe coding", href: "#vibe-coding" },
+  { label: "community", href: "#community" },
   { label: "work", href: "#projects" },
   { label: "papers", href: "#papers" },
-  { label: "open source", href: "#open-source" },
 ];
 
 export function Navigation() {

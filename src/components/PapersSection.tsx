@@ -26,7 +26,7 @@ const papers = [
 
 export function PapersSection() {
   return (
-    <section id="papers" className="py-16 px-6">
+    <section id="papers" className="py-16 px-6 bg-gray-50/50">
       <div className="max-w-4xl mx-auto">
         <p className="font-mono text-sm text-primary-500 mb-6">{"// papers"}</p>
 

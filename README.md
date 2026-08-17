@@ -66,9 +66,10 @@ yingxi-portfolio/
 
 1. **Hero** — 姓名 + 头衔 + 简介 + CTA 按钮
 2. **Expertise** — AI/LLM 应用、AI 产品落地、数据科学 三张卡片
-3. **Projects** — 研究与产业项目展示（后续扩展 vibe coding 作品）
-4. **Experience** — 时间线布局的工作经历
-5. **Contact** — 邮箱 + 社交链接
+3. **Vibe Coding** — AI 辅助开发作品
+4. **Community Contributions** — 已合并的开源社区贡献
+5. **Work** — 工作与学习项目
+6. **Papers** — 论文与学术成果
 
 ## Design Decisions
 
@@ -93,7 +94,6 @@ npm run build
 
 ## Roadmap
 
-- [ ] 添加 vibe coding 作品展示
 - [ ] 生成 GPT-image-2 视觉素材（头像、项目封面）
 - [ ] 添加暗色模式切换
 - [ ] 接入博客/文章区域
