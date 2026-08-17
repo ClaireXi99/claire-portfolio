@@ -45,7 +45,7 @@ const contributions: Contribution[] = [
 export function CommunityContributionsSection() {
   return (
     <section id="community" className="py-24 px-6 bg-gray-50/50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <p className="font-mono text-sm text-primary-500 mb-6">
           {"// community contributions"}
         </p>
@@ -56,11 +56,11 @@ export function CommunityContributionsSection() {
           参与开源社区，开发实用工具，也解决真实问题。
         </p>
 
-        <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
           {contributions.map((item) => (
             <div
               key={item.pr}
-              className="p-6 rounded-2xl border border-gray-100 bg-white hover:border-primary-100 hover:shadow-lg hover:shadow-primary-500/5 transition-all duration-300"
+              className="h-full p-6 rounded-2xl border border-gray-100 bg-white hover:border-primary-200 hover:shadow-lg hover:shadow-primary-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
               <div className="flex items-start justify-between gap-4 mb-3">
                 <div>
@@ -97,7 +97,7 @@ export function CommunityContributionsSection() {
                 </span>
               </div>
 
-              <div className="md:ml-6 space-y-2 text-sm text-gray-500 leading-relaxed">
+              <div className="space-y-2 text-sm text-gray-500 leading-relaxed">
                 <p>
                   <span className="text-gray-700 font-medium">背景：</span>
                   {item.background}
@@ -108,7 +108,7 @@ export function CommunityContributionsSection() {
                 </p>
               </div>
 
-              <div className="mt-4 md:ml-6">
+              <div className="mt-auto pt-5">
                 <a
                   href={item.pr}
                   target="_blank"
