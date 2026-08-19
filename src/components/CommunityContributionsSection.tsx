@@ -15,17 +15,17 @@ type Contribution = {
 
 const contributions: Contribution[] = [
   {
-    project: "dsh-data-insight",
-    repo: "https://github.com/ClaireXi99/dsh-data-insight",
-    org: "DeepSeek Harness Community · awesome-dsh-plugin",
-    contribution: "Added dsh-data-insight to Tools & Capabilities",
+    project: "EvalScope",
+    repo: "https://github.com/modelscope/evalscope",
+    stars: "3.3k",
+    org: "ModelScope · Alibaba Group",
+    contribution: "Added olmOCR-Bench document transcription benchmark",
     background:
-      "DeepSeek Harness 社区缺少一个能在 Agent 会话内直接完成 CSV、TSV 和 JSON 数据分析的轻量插件。",
+      "EvalScope 缺少文档转录类 VLM 基准；olmOCR-Bench 需要 PDF 渲染 + 按官方规则细粒度评分，没有现成适配器。",
     solution:
-      "独立开发 profile、异常检测、数据总结与聚合查询工具，并通过 PR #1273 正式收录到 awesome-dsh-plugin。",
-    pr: "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/1273",
+      "实现完整适配器：pypdfium2 渲染、五类评分规则 1:1 移植、按 (pdf, page) 分组去重转录、35 个单元测试全覆盖。+2226 行代码。",
+    pr: "https://github.com/modelscope/evalscope/pull/1598",
     status: "Merged",
-    reference: "PR #1273",
   },
   {
     project: "LightRAG",
@@ -40,6 +40,19 @@ const contributions: Contribution[] = [
     pr: "https://github.com/HKUDS/LightRAG/pull/3646",
     status: "Merged",
   },
+  {
+    project: "dsh-data-insight",
+    repo: "https://github.com/ClaireXi99/dsh-data-insight",
+    org: "DeepSeek Harness Community · awesome-dsh-plugin",
+    contribution: "Added dsh-data-insight to Tools & Capabilities",
+    background:
+      "DeepSeek Harness 社区缺少一个能在 Agent 会话内直接完成 CSV、TSV 和 JSON 数据分析的轻量插件。",
+    solution:
+      "独立开发 profile、异常检测、数据总结与聚合查询工具，并通过 PR #1273 正式收录到 awesome-dsh-plugin。",
+    pr: "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/1273",
+    status: "Merged",
+    reference: "PR #1273",
+  },
 ];
 
 export function CommunityContributionsSection() {
@@ -53,7 +66,7 @@ export function CommunityContributionsSection() {
           Community Contributions
         </h2>
         <p className="text-gray-500 mb-12">
-          参与开源社区，开发实用工具，也解决真实问题。
+          活跃于 AI 评估与工具链开源社区，贡献新基准、修复核心缺陷、开发实用工具。
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 items-stretch">
