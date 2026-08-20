@@ -28,6 +28,19 @@ const contributions: Contribution[] = [
     status: "Merged",
   },
   {
+    project: "TruLens",
+    repo: "https://github.com/truera/trulens",
+    stars: "3.5k",
+    org: "TruEra (Snowflake)",
+    contribution: "Fix ndcg_at_k shape crash and cohens_kappa label mutation",
+    background:
+      "ndcg_at_k 在 golden set 标注数少于 retriever 返回数时因 shape 不匹配 crash；cohens_kappa 直接修改传入 label 列表导致副作用。",
+    solution:
+      "用零值填充 y_true 对齐 y_score 长度解决 ndcg 维度问题；cohens_kappa 内部改用副本避免 mutation。PR #2709 Merged。",
+    pr: "https://github.com/truera/trulens/pull/2709",
+    status: "Merged",
+  },
+  {
     project: "LightRAG",
     repo: "https://github.com/HKUDS/LightRAG",
     stars: "38.8k",
