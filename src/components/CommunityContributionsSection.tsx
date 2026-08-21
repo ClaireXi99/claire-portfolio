@@ -15,6 +15,19 @@ type Contribution = {
 
 const contributions: Contribution[] = [
   {
+    project: "Archify",
+    repo: "https://github.com/tt-a1i/archify",
+    stars: "14.8k",
+    org: "tt-a1i",
+    contribution: "Added RAG pipeline architecture example",
+    background:
+      "Archify 官方示例只覆盖 Web 应用、部署拓扑与电商场景，缺少 AI/ML 架构模式示例，而 RAG 正是其目标用户最常见的生产级 AI 架构。",
+    solution:
+      "编写 12 组件 / 13 连接的 RAG pipeline 架构 IR（查询链路、文档摄取、安全护栏、语义缓存），通过 showcase 级 9/9 校验、5 视口双主题 visual-check、全量测试 657/657；CI 被首次贡献者门禁阻塞，在 fork 中等效干跑 9/9 全绿。+13837 行。",
+    pr: "https://github.com/tt-a1i/archify/pull/67",
+    status: "Merged",
+  },
+  {
     project: "EvalScope",
     repo: "https://github.com/modelscope/evalscope",
     stars: "3.3k",
@@ -79,7 +92,7 @@ export function CommunityContributionsSection() {
           Community Contributions
         </h2>
         <p className="text-gray-500 mb-12">
-          活跃于 AI 评估与工具链开源社区，贡献新基准、修复核心缺陷、开发实用工具。
+          活跃于 AI 评估与工具链开源社区，贡献新基准与官方示例、修复核心缺陷、开发实用工具。
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 items-stretch">
