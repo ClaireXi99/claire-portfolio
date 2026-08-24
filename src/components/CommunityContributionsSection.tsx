@@ -15,6 +15,19 @@ type Contribution = {
 
 const contributions: Contribution[] = [
   {
+    project: "lmms-eval",
+    repo: "https://github.com/EvolvingLMMs-Lab/lmms-eval",
+    stars: "4.4k",
+    org: "EvolvingLMMs-Lab",
+    contribution: "Fix MMMU open-ended scoring that iterated per character",
+    background:
+      "mmmu_process_results 把 parse_open_response 返回的候选列表塌缩成单个字符串，导致 eval_open 逐字符而非逐候选比对；开放题正确答案被判错，MMMU 开放题分数系统性偏低。",
+    solution:
+      "在 mmmu_acc 路径保留完整候选列表以对齐官方 MMMU 评测契约，另拆出 to_submission_answer() 供仍需单值的提交文件使用；补充单测钉住候选列表、提交格式与选择题回归。修复前后实测：数值题与字符串题准确率 0.0 → 1.0，错答控制组保持 0.0。",
+    pr: "https://github.com/EvolvingLMMs-Lab/lmms-eval/pull/1471",
+    status: "Merged",
+  },
+  {
     project: "Archify",
     repo: "https://github.com/tt-a1i/archify",
     stars: "14.8k",
