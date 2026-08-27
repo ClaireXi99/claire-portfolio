@@ -12,8 +12,8 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <ProjectsSection />
         <CommunityContributionsSection />
+        <ProjectsSection />
         <VibeCodingSection />
         <PapersSection />
       </main>

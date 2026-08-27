@@ -66,8 +66,8 @@ yingxi-portfolio/
 
 1. **Hero** — 姓名 + 头衔 + 简介 + CTA 按钮
 2. **Expertise** — AI Agent 开发、AI 评测、RAG 系统与 AI 数据合成
-3. **Work** — 工作与学习项目
-4. **Community Contributions** — 已合并的开源社区贡献
+3. **Community Contributions** — 已合并的开源社区贡献
+4. **Work** — 工作与学习项目
 5. **Vibe Coding** — AI 辅助开发作品
 6. **Papers** — 论文与学术成果
 
