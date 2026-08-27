@@ -1,23 +1,29 @@
-import { Brain, BarChart3, Workflow } from "lucide-react";
+import { AudioWaveform, Bot, Brain, Database } from "lucide-react";
 
 const expertiseItems = [
   {
+    icon: Bot,
+    title: "AI Agent 开发",
+    description:
+      "开发多节点 Agentic Workflow，配置 Native Agent Skill 路由与端到端任务链路，并探索 MCP 等 Agent 工具协议。",
+  },
+  {
     icon: Brain,
-    title: "AI / LLM",
+    title: "AI 评测",
     description:
-      "接触过 RAG、Prompt Engineering、SFT 微调等方向。参加过 SemEval-2024 竞赛（第二名），有一些大模型应用的实践经验。",
+      "通过 Trajectory、LLM-as-Judge、质量门禁与 Badcase 归因建立反馈闭环，以评测驱动系统持续迭代。",
   },
   {
-    icon: Workflow,
-    title: "数据产品",
+    icon: Database,
+    title: "RAG 系统",
     description:
-      "做过数据处理 Pipeline、标注体系设计、数据质量评估等工作。习惯从数据角度思考产品问题。",
+      "覆盖领域知识库、检索链路、Prompt 优化与鲁棒性评测，用可复现的基准支持技术选型和版本演进。",
   },
   {
-    icon: BarChart3,
-    title: "数据科学",
+    icon: AudioWaveform,
+    title: "AI 数据合成",
     description:
-      "硕士方向是数据科学，做过多模态数据融合、信号处理相关的研究。熟悉 Python 数据分析工具链。",
+      "具备 TTS 与 AI 音乐训练数据合成经验，建设数据处理、标注、质量筛选与治理 Pipeline。",
   },
 ];
 
@@ -32,7 +38,7 @@ export function ExpertiseSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {expertiseItems.map((item) => (
             <div
               key={item.title}

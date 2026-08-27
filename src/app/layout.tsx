@@ -13,14 +13,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "王映熹 | AI Product & Data Science",
+  title: "王映熹 | AI Agent 开发与 AI 评测工程师",
   description:
-    "AI Product Manager & Data Scientist. 3 years at Huawei, Newcastle University MSc (Distinction). Building intelligent products with LLMs, RAG, and data-driven decision making.",
+    "AI Agent 开发与 AI 评测工程师，专注 Agentic Workflow、Agent Evaluation、RAG、AI 数据合成与评测驱动的系统迭代。",
   keywords: [
-    "AI Product Manager",
-    "Data Science",
+    "AI Agent",
+    "AI Agent Developer",
+    "AI Evaluation",
+    "Agent Evaluation",
+    "LLM Evaluation",
+    "Trajectory Evaluation",
     "LLM",
     "RAG",
+    "AI 数据合成",
+    "EvalScope",
+    "Python",
     "Huawei",
     "Portfolio",
     "王映熹",

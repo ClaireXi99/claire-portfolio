@@ -12,9 +12,9 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <VibeCodingSection />
-        <CommunityContributionsSection />
         <ProjectsSection />
+        <CommunityContributionsSection />
+        <VibeCodingSection />
         <PapersSection />
       </main>
       <Footer />

@@ -11,19 +11,19 @@ const projects = [
     link: "https://github.com/GavinZhao19/SemEval24-NumAnalysis-CN",
   },
   {
-    title: "盘古大模型 RAG 验证",
+    title: "接入网智能助手 RAG 系统",
     category: "工作项目",
     description:
-      "搭建了 50 万 token 的领域语料库，设计评测方案验证 RAG 效果。",
-    tags: ["RAG", "Prompt", "Python"],
+      "建设领域知识库、检索链路与 Prompt 优化方案，以能力回归、检索质量、抗干扰评测和 CI 质量门禁持续驱动系统迭代。",
+    tags: ["RAG", "Evaluation", "CI/CD"],
     highlight: false,
   },
   {
-    title: "AI 音乐训练数据平台",
+    title: "音乐生成 Agent 与数据 Pipeline",
     category: "工作项目",
     description:
-      "搭建数据处理 Pipeline，用 Agent 方式编排不同的处理模块，产出模型训练用的音频数据。",
-    tags: ["Agent", "Pipeline", "Audio"],
+      "开发多节点 Agentic Workflow 与 Skill 路由，通过轨迹评测和节点级诊断优化任务链路；同时建设 AI 音乐训练数据合成与质量筛选 Pipeline。",
+    tags: ["Agentic Workflow", "Agent Eval", "AI Data"],
     highlight: false,
   },
   {

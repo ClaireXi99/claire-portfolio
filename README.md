@@ -1,6 +1,6 @@
 # Claire Portfolio | 王映熹
 
-> AI Product & Data Science — 个人作品集网站
+> AI Agent Development & Evaluation — 个人作品集网站
 
 ## Preview
 
@@ -65,10 +65,10 @@ yingxi-portfolio/
 ## Sections
 
 1. **Hero** — 姓名 + 头衔 + 简介 + CTA 按钮
-2. **Expertise** — AI/LLM 应用、AI 产品落地、数据科学 三张卡片
-3. **Vibe Coding** — AI 辅助开发作品
+2. **Expertise** — AI Agent 开发、AI 评测、RAG 系统与 AI 数据合成
+3. **Work** — 工作与学习项目
 4. **Community Contributions** — 已合并的开源社区贡献
-5. **Work** — 工作与学习项目
+5. **Vibe Coding** — AI 辅助开发作品
 6. **Papers** — 论文与学术成果
 
 ## Design Decisions

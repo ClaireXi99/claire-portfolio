@@ -1,21 +1,21 @@
 const experiences = [
   {
-    role: "AI 音乐音效组 / 数据产品负责人",
+    role: "AI Agent 开发与评测工程师",
     company: "华为 2012 实验室 · 中央媒体研究院",
     period: "2024.11 – 至今",
     location: "上海",
     description:
-      "主导 AI 音乐生成模型训练数据全链路。Agent 编排构建可复用数据处理工作流，组织 10 人标注团队，产出百万级高质量训练数据。",
-    tags: ["Agent", "Pipeline", "TTS", "Data Product"],
+      "面向音乐生成场景开发多节点 Agentic Workflow，配置 Native Agent Skill 路由与端到端任务链路；以 Trajectory、节点级质量监控和 LLM-as-Judge 开展评测与 Badcase 归因，并建设训练数据合成、处理与质量筛选 Pipeline。",
+    tags: ["Agentic Workflow", "Agent Eval", "LLM-as-Judge", "AI Data"],
   },
   {
-    role: "品质宽带测试组 / 盘古大模型 RAG",
+    role: "RAG 系统开发与评测工程师",
     company: "华为 NCE 解决方案与集成验证部",
     period: "2023.06 – 2024.10",
     location: "东莞",
     description:
-      "盘古大模型 RAG 验证与 Prompt 工程优化。构建领域语料库，设计评测方案，驱动模型效果持续提升。",
-    tags: ["RAG", "Prompt Engineering", "NLP", "Python"],
+      "参与接入网智能助手 RAG 系统建设，覆盖领域知识库、检索链路与 Prompt 优化；设计能力回归、检索质量和抗干扰评测体系，通过 A/B 对比、CI 质量门禁与 Badcase 闭环支持技术选型和系统迭代。",
+    tags: ["RAG", "Evaluation", "CI/CD", "Python"],
   },
   {
     role: "Research Assistant",
