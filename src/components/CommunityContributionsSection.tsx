@@ -15,6 +15,19 @@ type Contribution = {
 
 const contributions: Contribution[] = [
   {
+    project: "inspect_ai",
+    repo: "https://github.com/UKGovernmentBEIS/inspect_ai",
+    stars: "2.7k",
+    org: "UK Government BEIS",
+    contribution: "Fix value_to_float silently passing through numeric custom sentinels",
+    background:
+      "value_to_float() 的 correct/incorrect/partial 参数按 docstring 允许数值型自定义值，但数值转换分支排在哨兵相等检查之前，数值哨兵被原样透传而非映射到 1/0.5/0：静默无警告，accuracy 可超 1、partial 记满分甚至出现负分，下游 accuracy()/mean()/pass@k 全部被污染。",
+    solution:
+      "将哨兵相等检查移到数值转换之前（字符串路径不变，纯分支重排）；逐值验证默认行为不变、NaN/±inf 透传保留、非哨兵数值仍透传；新增数值哨兵映射与非常数透传两组回归测试，tests/scorer/ 519 通过。",
+    pr: "https://github.com/UKGovernmentBEIS/inspect_ai/pull/4928",
+    status: "Merged",
+  },
+  {
     project: "lmms-eval",
     repo: "https://github.com/EvolvingLMMs-Lab/lmms-eval",
     stars: "4.4k",
