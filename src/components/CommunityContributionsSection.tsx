@@ -15,6 +15,19 @@ type Contribution = {
 
 const contributions: Contribution[] = [
   {
+    project: "EvalView",
+    repo: "https://github.com/hidai25/eval-view",
+    stars: "133",
+    org: "hidai25",
+    contribution: "Add score trend slope to get_statistics()",
+    background:
+      "EvalView 的 get_statistics() 只报告当前值与均值/极值，没有变化方向，使用者无法从统计结果判断 agent 表现在改善还是退化（upstream issue #148）。",
+    solution:
+      "复用 drift_tracker 中已有的 OLS _compute_slope 而非新增第二套斜率实现，并处理 get_test_history() 的 timestamp DESC 排序以避免斜率符号反转，同步扩展 trends 命令输出。上游 CI 因首次贡献者门禁被挂起，改为本地跑满 Python 3.9/3.10/3.11/3.12 四版本矩阵：全量 2105 测试通过，ruff 与 mypy 干净。+349/−4，含 244 行新增测试。",
+    pr: "https://github.com/hidai25/eval-view/pull/270",
+    status: "Merged",
+  },
+  {
     project: "inspect_ai",
     repo: "https://github.com/UKGovernmentBEIS/inspect_ai",
     stars: "2.7k",
